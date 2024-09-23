@@ -48,7 +48,7 @@ class Reservation {
         this.numGuests,
         this.notes]);
       if (result.rows.length === 0)
-        throw new Error("Cannot insert into rervations.");
+        throw new Error("Cannot insert into reservations Table. Try again.");
 
       this.id = result.rows[0].id;
     } else {
